@@ -27,6 +27,7 @@
     <!-- Checkout form ends here-->
 
     <!--Your cart and billing address starts here-->
+    <!--Your cart starts here-->
     <section class="row g-5">
         <div class="col-md-5 col-lg-4 order-md-last">
             <h4 class="d-flex justify-content-between align-items-center text-primary">
@@ -34,12 +35,12 @@
                 <span class="badge rounded-pill text-bg-primary">3</span>
             </h4>
             <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between mb-2">
+                <li class="my-0 list-group-item d-flex justify-content-between">
                     <div>
-                        <h5 class="my-0 fs-5 fw-medium">
+                        <h5 class="text-start my-0 fs-5 fw-medium">
                             Product name
                         </h5>
-                        <p class=" my-0 text-secondary">
+                        <p class="text-start my-0 text-secondary">
                             Brief description
                         </p>
                     </div>
@@ -47,7 +48,7 @@
                         12$
                     </span>
                 </li>
-                <li class="mt-0 list-group-item d-flex justify-content-between">
+                <li class="my-0  list-group-item d-flex justify-content-between">
                     <div>
                         <h5 class="my-0 fs-5 fw-medium">
                             Second product
@@ -94,7 +95,7 @@
                     </div>
                     <span class="fw-bold">
                         20$
-                    </span> 
+                    </span>
                 </li>
             </ul>
             <div class="card p-2 mt-0">
@@ -104,7 +105,86 @@
                 </div>
             </div>
         </div>
+        <!--Your cart ends here-->
+
+        <!--Billing address starts here-->
+        <div class="col-md-7 col-lg-8 row">
+            <h3 class="text-start">
+                Billing address
+            </h3>
+
+            <div class="d-flex justify-content-between column-gap-3">
+                <div class="mb-3 text-start col-sm-6">
+                    <label for="exampleFormControlInput1" class="form-label">First name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                </div>
+                <span class="mb-3 text-start col-sm-6">
+                    <label for="exampleFormControlInput2" class="form-label">Last name</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput2">
+                </span>
+            </div>
+
+            <div class="mb-4 col-12">
+                <div class="text-start mb-2">
+                    Username
+                </div>
+                <div class="input-group flex-nowrap col-xs-12">
+                    <span class="input-group-text" id="addon-wrapping">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="addon-wrapping">
+                </div>
+            </div>
+
+            <div class="my-2 text-start col-12">
+                <label for="exampleFormControlInput3" class="form-label">Email <span
+                        class="text-secondary">(Optional)</span></label>
+                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="you@example.com">
+            </div>
+
+            <div class="my-2 text-start col-12">
+                <label for="exampleFormControlInput4" class="form-label">Address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput4" placeholder="1234 Main St">
+            </div>
+
+            <div class="my-2 text-start col-12">
+                <label for="exampleFormControlInput5" class="form-label">Address <span
+                        class="text-secondary">(Optional)</span></label>
+                <input type="email" class="form-control" id="exampleFormControlInput5" placeholder="Apartment or suite">
+            </div>
+
+
+            <div class="d-flex justify-content-between column-gap-3">
+                <div class="mb-3 text-start col-sm-5">
+                    <div class="text-start mb-2">
+                        Country
+                    </div>
+                    <select class="form-select">
+                        <option selected>Choose</option>
+                        <option value="1">Macedonia</option>
+                        <option value="2">Germany</option>
+                        <option value="3">UK</option>
+                    </select>
+                </div>
+                <span class="mb-3 text-start col-sm-4">
+                    <div class="text-start mb-2">
+                        City
+                    </div>
+                    <select class="form-select">
+                        <option selected>Choose</option>
+                        <option value="1">Skopje</option>
+                        <option value="2">Berlin</option>
+                        <option value="3">London</option>
+                    </select>
+                </span>
+                <span class="mb-3 text-start col-sm-3">
+                    <label for="exampleFormControlInput6" class="form-label">Zip<span
+                            class="text-secondary">(Optional)</span></label>
+                    <input type="email" class="form-control" id="exampleFormControlInput6">
+                </span>
+            </div> 
+        </div>
     </section>
+    <!--Billing address ends here-->
     <!--Your cart and billing address ends here-->
 
 </body>
